@@ -1,0 +1,47 @@
+DISCOVERY LAB — HYBRID SEARCH
+=============================
+
+1. Unzip this package.
+
+2. In VS Code choose:
+   File > Open Folder
+
+3. Open THIS folder:
+   discovery_lab_hybrid_ready
+
+4. In the VS Code terminal run:
+
+   python -m venv .venv
+
+5. Activate the environment:
+
+   .\.venv\Scripts\Activate.ps1
+
+6. Install packages:
+
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+
+7. Prepare DOAB data:
+
+   python src/prepare_data.py
+
+8. Build embeddings:
+
+   python src/build_embeddings.py
+
+9. Start the Discovery Lab:
+
+   python -m streamlit run app.py
+
+You should see four tabs:
+
+1. Keyword
+2. Semantic
+3. Hybrid
+4. Compare & judge
+
+IMPORTANT:
+requirements.txt is in this same folder as app.py and config.py.
+If 'pip install -r requirements.txt' says the file is missing,
+check that your terminal is inside this folder.

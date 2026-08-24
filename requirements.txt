@@ -1,0 +1,6 @@
+pandas
+numpy
+requests
+rank-bm25
+sentence-transformers
+streamlit
